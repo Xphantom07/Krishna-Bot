@@ -1,0 +1,327 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Krishna Ai</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('krishna3.jpg');
+            background-size: cover;
+            background-position: left;
+            height: 100vh;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .krishna-profile {
+            height: 6rem;
+            position: absolute;
+            right: 2rem;
+            margin-top: 2.5rem;
+            
+            /* Ensure it's circular */
+            clip-path: circle(60% at center);
+            
+            /* Smooth blending effect on round sides */
+            -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0, 1) 25%,rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 70%,);
+            mask-image: radial-gradient(circle, rgb(0, 0, 0, 1) 25%,rgb(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 65%);
+            
+            /* Optional: Soft glow for better blending */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+        h1, .quote {
+            position: absolute;
+            right: 0; /* Align both text elements to the right */
+            margin-right: 8rem; /* Add some margin to avoid touching the edge */
+        }
+
+        h1 {
+            padding-top: 1.8rem;
+            margin-bottom: 0;
+            font-size: 1.3rem;
+        }
+        @media(max-width:1024px){
+            .curved-arrow{
+                visibility: hidden !important;
+            }
+        }
+        @media(max-width: 768px) {
+            .welcome{
+                visibility: hidden;
+            }
+            .quote{
+                visibility: hidden;
+            }
+            h1{
+                right: auto !important;
+                left: -8rem !important;  
+                margin-right: 0 !important;
+                padding-top: 0.5rem;
+            }
+            .krishna-profile{
+                right:0;
+                margin-top: 0.6rem;
+            }
+            body{
+                background-position: calc(50% + 32vh);
+            }
+
+            #quote-box{
+                font-size: 1.5rem !important;
+                width:80% !important;
+                bottom:5rem !important;
+            }
+
+        }
+        @media(max-width:460px){
+            h1 .krishna{
+                padding-top:50px;
+                font-size: 2rem !important;    
+            }
+        }
+        @media(max-width:366px){
+            h1 .krishna{
+                padding-top:50px;
+                font-size: 1.8rem !important;    
+            }
+        }
+        .krishna{
+            font-size: 2.5rem;
+            font-family: "Eagle Lake", serif;
+            color:rgb(0, 157, 255);
+            text-shadow: -4px -3px 3px rgb(0, 0, 0);
+        }
+        .quote{
+            margin-right: 8rem;
+            margin-top: 5.8rem;
+            font-size: 1.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            color:rgb(58, 1, 74);
+            text-shadow: 1px 1px black;
+            font-family: "Sofia", serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        #quote-box {
+            position: absolute;
+            bottom: 1rem; /* Position at the bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Center it horizontally */
+            background: rgba(29, 23, 0, 0.688); /* Semi-transparent background */
+            color: rgb(255, 234, 0);
+            border-radius: 8px;
+            text-align: center;
+            width: 60%;
+            font-family: "Charm", serif;
+            font-size: 2rem;
+        }
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 24px;
+            background-color: rgb(107, 0, 0);
+            animation: blink 0.6s infinite;
+            position: relative;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .social-icons {
+            position: absolute;
+            left: 2rem;
+            bottom: 2rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .social-icons .icon {
+            font-size: 2.6rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons .icon:hover {
+            color: #FFD700; 
+        }
+        .rights{
+            color:white;
+            position: absolute;
+            left:1rem;
+            bottom: -1rem;
+            background-color: rgba(0, 0, 0, 0.371);
+        }
+
+        .curved-arrow {
+        position: absolute;
+        right: 3rem; /* Adjust as needed */
+        top: 8rem; /* Start from near the top */
+        width: 400px;
+        height: 600px; /* Long enough for half-screen */
+        }
+
+        .circle {
+            width: 70px; /* Adjust the size of the circle */
+            height: 70px;
+            background-color: rgb(34, 0, 255); /* Change to your preferred color */
+            border-radius: 50%;
+            position: fixed;
+            bottom: 21px; /* Distance from the bottom */
+            right: 21px; /* Distance from the right */
+            box-shadow: 0 5px 35px rgba(0, 17, 255, 0.797); /* Optional shadow for effect */
+        }       
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        } 
+    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Eagle+Lake&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="footer">
+    <div class="social-icons">
+        <a href="https://www.instagram.com/bhavik_prajapati7/" target="_blank" class="icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bhavik-vavadiya-602660284/" target="_blank" class="icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+        <div>
+        <p class="rights">&copy; 2025 Bhavik. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <div id="particles-js"></div>
+
+    <img class="krishna-profile" src="krishna profile1.png" alr="krishna Profile Pic">
+    <h1><span class="welcome" >Welcome to </span><span class="krishna">Shree Krishna</span><span class="welcome"> Ai</span></h1>
+
+    <p class="quote" id="quote"><span id="text"></span><span class="cursor" id="cursor"></span></p>
+    
+    <div id="quote-box">
+        <p id="quote-text">The mind is everything. What you think you become</p>
+    </div>
+
+    <svg class="curved-arrow" viewBox="0 0 250 600">
+        <path d="M100,60 
+                 Q200,100 180,180  
+                 Q100,250 160,300 
+                 Q280,350 100,400
+                 Q50,450 190,550"  
+              stroke="blue" stroke-width="3" fill="transparent" 
+              stroke-dasharray="8,8" 
+              marker-end="url(#arrowhead)" />
+        
+        <!-- Arrowhead -->
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <polygon points="0 0, 10 5, 0 10" fill="blue"/>
+            </marker>
+        </defs>
+    </svg>
+    <div class="circle"></div>
+
+    <div class="bot-wrapper">
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/01/28/16/20250128164021-WZ2N41MD.js"></script>
+    </div>
+
+    <script>
+
+        const text = "Interact with Krishna for spiritual guidance";
+            const textElement = document.getElementById("text");
+            const cursor = document.getElementById("cursor");
+            let index = 0;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    textElement.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    cursor.style.display = "inline-block"; // Ensure cursor remains after typing
+                }
+            }
+
+            typeWriter();
+        // Quotes for the quote box
+        const quotes = [
+            "Change is the law of the universe",
+            "You have the right to work, but never to the result of work",
+            "A person can rise through the efforts of his own mind",
+            "The soul is neither born, and nor does it die",
+            "Happiness comes from within, not from external sources"
+        ];
+
+        // Change the quote every 5 seconds
+        setInterval(() => {
+            document.getElementById("quote-text").innerText = quotes[Math.floor(Math.random() * quotes.length)];
+        }, 5000);
+
+    
+        particlesJS("particles-js", {
+    particles: {
+        number: { value: 75, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" }, // Ensures round shape
+        opacity: { 
+            value: 0.8, 
+            random: true, 
+            anim: { enable: true, speed: 0.5, opacity_min: 0.2, sync: false } 
+        },
+        size: { 
+            value: 12, 
+            random: true, 
+            anim: { enable: true, speed: 1, size_min: 3, sync: false } 
+        },
+        move: {
+            enable: true,
+            speed: 1.2, 
+            direction: "top", // Moves upwards
+            random: false,
+            straight: true, // Moves in a straight upward direction
+            out_mode: "out",
+            bounce: false
+        },
+        line_linked: { enable: false } // Removes lines
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: { enable: true, mode: "bubble" },
+            onclick: { enable: true, mode: "repulse" }
+        },
+        modes: {
+            bubble: { distance: 200, size: 10, duration: 2, opacity: 0.9, speed: 2 },
+            repulse: { distance: 100, duration: 0.4 }
+        }
+    }
+});
+
+    </script>
+</body>
+</html>
