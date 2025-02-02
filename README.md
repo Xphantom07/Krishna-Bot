@@ -2,4 +2,4 @@
  Bot of Shree krishna
 
 # Link
- [text](https://xphantom07.github.io/Krishna-Bot/)
+ https://xphantom07.github.io/Krishna-Bot/
