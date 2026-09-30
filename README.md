@@ -1,28 +1,36 @@
 # 🦚 Krishna Chatbot
 
-A simple devotional chatbot designed for **Krishna-related conversations**, providing users with an accessible and interactive way to explore Krishna-focused questions and discussions directly from the browser.
+A simple devotional chatbot experience focused on **Lord Krishna**, designed to provide quick and accessible Krishna-related conversations directly from the browser.
 
 ## 🌐 Live Demo
 
-🔗 **[Krishna Chatbot](https://xphantom07.github.io/Krishna-Bot/)**
+**[Try Krishna Chatbot](https://xphantom07.github.io/Krishna-Bot/)**
 
-## 📌 Features
+## 📌 About the Project
 
-* 💬 Interactive Krishna-focused chatbot
-* 🦚 Devotional and Krishna-related conversations
-* 🎨 Simple and user-friendly interface
+**Krishna Chatbot** is a lightweight web-based chatbot that allows users to interact with a Krishna-focused conversational assistant.
+
+The project combines a simple, user-friendly interface with **Botpress** to provide an interactive chatbot experience without requiring users to install any application.
+
+## ✨ Features
+
+* 🦚 Krishna-focused conversational chatbot
+* 💬 Interactive browser-based chat experience
+* 🎨 Simple and accessible user interface
 * ⚡ Lightweight and fast-loading web application
-* 🌐 Runs directly in the browser
-* 📱 Accessible across different screen sizes
-* 🚀 Hosted using GitHub Pages
+* 📱 Responsive design for different screen sizes
+* 🌐 Deployed using GitHub Pages
+* 🤖 Botpress-powered chatbot functionality
 
 ## 🛠️ Technologies Used
 
-* **HTML** – Structure of the web application
-* **CSS** – Styling and responsive interface
-* **JavaScript** – Chatbot interaction and functionality
-* **Botspace** – Chatbot integration
-* **GitHub Pages** – Deployment and hosting
+| Technology   | Purpose                          |
+| ------------ | -------------------------------- |
+| HTML5        | Webpage structure                |
+| CSS3         | Styling and responsive design    |
+| JavaScript   | Client-side functionality        |
+| Botpress     | Chatbot and conversational logic |
+| GitHub Pages | Deployment and hosting           |
 
 ## 📂 Project Structure
 
@@ -32,12 +40,10 @@ Krishna-Bot/
 ├── index.html
 ├── style.css
 ├── script.js
-├── assets/
-│   └── ...
 └── README.md
 ```
 
-> The exact file structure may vary depending on the current version of the project.
+> The exact file structure may vary depending on the current project files.
 
 ## 🚀 Getting Started
 
@@ -55,38 +61,35 @@ cd Krishna-Bot
 
 ### 3. Run the Project
 
-Since this is a static web application, you can simply open:
-
-```text
-index.html
-```
-
-in your browser.
+Since this is a static web application, you can open `index.html` directly in your browser.
 
 Alternatively, use the **Live Server** extension in VS Code for local development.
 
-## 🌍 Deployment
+## 🌐 Deployment
 
 The project is deployed using **GitHub Pages**.
 
-Every update pushed to the configured GitHub Pages branch can be reflected on the live website.
+Live website:
 
-🔗 **Live Website:**
-https://xphantom07.github.io/Krishna-Bot/
+**https://xphantom07.github.io/Krishna-Bot/**
 
-## 🎯 Project Objective
+## 🎯 Project Goals
 
-The main objective of this project is to create a lightweight and accessible chatbot experience centered around **Lord Krishna**, combining a simple web interface with chatbot functionality.
+* Create an easy-to-use devotional chatbot.
+* Provide Krishna-related information through conversational interaction.
+* Practice frontend web development.
+* Explore chatbot integration using Botpress.
+* Deploy a web application using GitHub Pages.
 
 ## 🔮 Future Improvements
 
-* Add more Krishna-related knowledge and responses
-* Improve chatbot conversational capabilities
-* Add voice input and text-to-speech
-* Improve mobile responsiveness
-* Add conversation history
-* Add more devotional content and resources
-* Enhance the overall UI/UX
+* Add more Krishna-related knowledge and conversations.
+* Improve chatbot response quality.
+* Add multilingual support, including Hindi and Gujarati.
+* Improve mobile responsiveness.
+* Add devotional quotes and Bhagavad Gita content.
+* Add voice interaction.
+* Improve the visual design and animations.
 
 ## 👨‍💻 Author
 
@@ -95,6 +98,6 @@ The main objective of this project is to create a lightweight and accessible cha
 * GitHub: [@Xphantom07](https://github.com/Xphantom07)
 * Portfolio: [iambhavik.dev](https://iambhavik.dev)
 
----
+## 📄 License
 
-⭐ If you find this project interesting, consider giving the repository a star!
+This project is created for educational and personal project purposes.
